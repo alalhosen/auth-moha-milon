@@ -50,8 +50,8 @@ const Login = () => {
             </div>
           </form>
           <p className="ml-8 pb-4">
-            New here? Please
-            <Link>
+           You are new here today? Please
+            <Link to="/register">
               <button className="btn btn-link">Register</button>
             </Link>
           </p>
