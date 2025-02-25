@@ -1,13 +1,19 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-
-    const navLinks =<>
-      <li><NavLink to="/">Home</NavLink></li>
-      <li><NavLink to="/login">Login</NavLink></li>
-      <li><NavLink to="/register">Register</NavLink></li>
+  const navLinks = (
+    <>
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/login">Login</NavLink>
+      </li>
+      <li>
+        <NavLink to="/register">Register</NavLink>
+      </li>
     </>
-
+  );
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -32,8 +38,7 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-          {navLinks}
-                
+            {navLinks}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -46,11 +51,7 @@ const Navbar = () => {
           <li>
             <details>
               <summary>Parent</summary>
-              <ul className="p-2">
-              
-{navLinks}
-
-              </ul>
+              <ul className="p-2">{navLinks}</ul>
             </details>
           </li>
           <li>
