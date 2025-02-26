@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import PropTypes from 'prop-types'; 
 
-const AuthContext = createContext(null);
+export const AuthContext = createContext(null);
 
 const AuthProvider = ({children}) => {
   const authInfo = { name: "nodi sagor khal bill" };
@@ -19,7 +19,7 @@ AuthProvider.propTypes = {
 }
 
 /***
- * 1. Create context
+ * 1. Create context and expirt it
  * 2. set provider with value
  * 3. use the Auth Provider in the main.jsx file
  * 4. access children in the AuthProvider component as children use it in the middle of the Provider
