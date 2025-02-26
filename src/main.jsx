@@ -7,7 +7,7 @@ import Login from "./components/Login.jsx";
 import Register from "./components/Register.jsx";
 import Home from "./components/Home.jsx";
 import Root from "./components/Root.jsx";
-import AuthProvider from "./provider/AuthProvider.jsx";
+import AuthProvider from "./providers/AuthProvider.jsx";
 
 const router = createBrowserRouter([
   {
