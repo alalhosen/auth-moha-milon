@@ -1,10 +1,14 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import PropTypes from 'prop-types'; 
 
 const AuthContext = createContext(null);
 
 const AuthProvider = ({children}) => {
-  const authInfo = {name: 'Nadi Sagooooor'}
+
+const [user, setUser] = useState(null);
+
+
+  const authInfo = {user}
   return (
     <AuthContext.Provider value={authInfo}>
       {children}

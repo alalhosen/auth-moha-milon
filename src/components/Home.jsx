@@ -2,14 +2,13 @@ import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Home = () => {
-  const authInfo = useContext(AuthContext);
-  console.log(authInfo)
+  
   return (
     <div>
         <div>
-            <h2 className="text-3xl">This is Home for: {authInfo.name} </h2>
+            <h2 className="text-3xl">This is Home for: </h2>
         </div>
-      <div
+      {/* <div
         className="hero min-h-screen"
         style={{
           height: [800],
@@ -20,15 +19,11 @@ const Home = () => {
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
+            
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
