@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
 // ......................................
-  const authInfo = useContext()
+  const authInfo = useContext(A)
 
   const handleRegister = (e) => {
     e.preventDefault();
