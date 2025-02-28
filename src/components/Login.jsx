@@ -52,7 +52,7 @@ const Login = () => {
           <p className="ml-8 pb-4">
            You are new here today? Please
             <Link to="/register">
-              <button className="btn btn-link">Register</button>
+              <button className="btn btn-link border mb-2">Register</button>
             </Link>
           </p>
         </div>
