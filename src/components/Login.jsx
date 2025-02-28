@@ -54,6 +54,9 @@ const Login = () => {
             <Link to="/register">
               <button className="btn btn-link border mb-2">Register</button>
             </Link>
+            <Link to="/">
+            <button className="btn btn-primary">Go Back</button>
+            </Link>
           </p>
         </div>
       </div>
