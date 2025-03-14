@@ -3,12 +3,15 @@ import { AuthContext } from "../providers/AuthProvider";
 
 const Home = () => {
   
+
+
   return (
     <div>
         <div>
             <h2 className="text-3xl">This is Home for: </h2>
         </div>
-      {/* <div
+
+      <div
         className="hero min-h-screen"
         style={{
           height: [800],
@@ -23,7 +26,8 @@ const Home = () => {
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
-      </div> */}
+      </div>
+
     </div>
   );
 };
